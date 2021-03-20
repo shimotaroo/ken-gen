@@ -1,3 +1,5 @@
+import './bootstrap'
+
 // Vue.jsをインポートする
 import Vue from 'vue'
 
