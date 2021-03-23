@@ -17,14 +17,7 @@ class CreatePermissionsTable extends Migration
             $table->Increments('id');
             $table->string('symbol', 5)->index()->comment('権限記号');
             $table->string('number', 5)->comment('権限番号');
-            $table->unsignedInteger('owner_description_id')->comment('所有者の権限');
-            $table->unsignedInteger('group_description_id')->comment('所有グループの権限');
-            $table->unsignedInteger('other_description_id')->comment('その他の権限');
-            $table->timestamps();
-
-            $table->foreign('owner_description_id')->references('id')->on('permission_descriptions')->onDelete('cascade');
-            $table->foreign('group_description_id')->references('id')->on('permission_descriptions')->onDelete('cascade');
-            $table->foreign('other_description_id')->references('id')->on('permission_descriptions')->onDelete('cascade');
+            $table->string('description', 100)->comment('権限内容の説明');
         });
     }
 
