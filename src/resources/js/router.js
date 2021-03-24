@@ -13,7 +13,9 @@ const routes = [
     },
     {
         path: '/result',
-        component: Result
+        name: 'result',
+        component: Result,
+        props: true
     }
 ]
 
