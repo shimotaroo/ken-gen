@@ -1,9 +1,27 @@
 body {
-    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #222222;
+}
+
+a, h2 {
+    color: #222222 !important
 }
 
 .v-toolbar__title, .app-title {
     font-family: 'Righteous', cursive;
+}
+
+// フォントサイズ・太さ
+.font-small {
+    font-size: 14px;
+}
+
+.font-big {
+    font-size: 18px;
+}
+
+.font-bold {
+    font-weight: bold;
 }
 
 .summary-image {
@@ -23,19 +41,19 @@ body {
     margin-bottom: 20px;
 }
 
-.input-container {
+.v-content {
     background-color: #F1F5F9;
     text-align: center;
     font-family: 'M PLUS 1p', sans-serif;
 }
 
-.description-area {
-    margin-top: 150px;
+.component-area {
+    margin: 150px auto;
 }
 
 .form-area {
     width: 150px;
-    margin: 30px auto 150px;
+    margin: 30px auto 0;
 }
 
 .form input {
@@ -45,11 +63,26 @@ body {
     padding: 5px 25px;
 }
 
-.form .form-button {
+.form .form-button, .link-button {
     margin: 30px auto 0;
     text-align: center;
     background-color: white;
     width: 120px;
-    padding: 5px 20px;
+    padding: 10px 20px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.result-area {
+    width: 450px;
+    margin: 0 auto;
+}
+
+.command-area, .symbol-area {
+    margin: 0 auto 40px;
+}
+
+.bg-white {
+    background-color: white;
+    padding: 10px 20px;
 }
