@@ -26,6 +26,7 @@ class PermissionController extends Controller
     public function convert(Request $request)
     {
         $response = [
+            'symbol' => $request->symbol,
             'number' => ''
         ];
         $dividedSymbol = str_split($request->symbol, 3);

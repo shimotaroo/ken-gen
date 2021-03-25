@@ -9,6 +9,7 @@ Vue.use(VueRouter)
 const routes = [
     {
         path: '/',
+        name: 'top',
         component: Top
     },
     {

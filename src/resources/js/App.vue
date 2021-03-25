@@ -2,9 +2,9 @@
     <v-app>
         <Header />
         <Decription />
-        <div class="input-container">
-            <RouterView />
-        </div>
+        <v-content>
+            <router-view />
+        </v-content>
         <Footer />
     </v-app>
 </template>

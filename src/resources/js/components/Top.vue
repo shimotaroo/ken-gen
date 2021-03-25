@@ -1,19 +1,40 @@
 <template>
-    <div>
+    <div class="component-area">
         <div class="description-area">
             <p class="mb-0">変更したい権限を入力してください</p>
             <small>先頭のd、-、|は入力しないでください</small>
         </div>
-        <v-form>
-            <v-text-field
-                placeholder="rwxrwxrwx"
-            />
-        </v-form>
-        <v-btn
-            class="px-5 py-5 grey lighten-5"
-            elevation="2"
-        >
-            変換する
-        </v-btn>
+        <div class="form-area">
+            <form class="form" @submit.prevent="convert">
+                <input type="text" v-model="permission_symbol" placeholder="rwxrwxrwx" autofocus>
+                <div class="form-button">
+                    <button type="submit">変換する</button>
+                </div>
+            </form>
+        </div>
     </div>
 </template>
+
+<script>
+
+export default {
+    data () {
+        return {
+            permission_symbol: ''
+        }
+    },
+    methods: {
+        async convert () {
+            const postData = { 
+                'symbol': this.permission_symbol
+            }
+            const response = await axios.post('/api/convert', postData);
+            console.log(response);
+            this.$router.push({name: 'result', params: {
+                symbol: response.data.symbol,
+                number: response.data.number
+            }})
+        }
+    }
+}
+</script>
