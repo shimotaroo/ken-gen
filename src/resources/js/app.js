@@ -7,13 +7,13 @@ import Vue from 'vue'
 import router from './router'
 
 // Vuetifyをインポートする
-import Vuetify from 'vuetify';
-import 'vuetify/dist/vuetify.min.css';
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
 
 // ルートコンポーネントをインポートする
 import App from './App.vue'
 
-Vue.use(Vuetify);
+Vue.use(Vuetify)
 
 new Vue({
     el: '#app',
