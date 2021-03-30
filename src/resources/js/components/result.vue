@@ -1,6 +1,6 @@
 <template>
     <div class="component-area">
-        <div class="result-area">
+        <div class="result-area" v-if="number && symbol">
             <div class="command-area">
                 <p class="mb-1 font-big">ターミナルで以下のコマンドを実行してください。</p>
                 <p class="font-small">権限エラーになる場合は先頭にsudoをつけて実行してください。</p>
@@ -10,8 +10,8 @@
                 <p>変更後の権限</p>
                 <p class="bg-white">{{ symbol }}</p>
             </div>
-            <router-link :to="{ name: 'top' }" class="link-button">戻る</router-link>
         </div>
+        <router-link :to="{ name: 'top' }" class="link-button">入力画面に戻る</router-link>
     </div>
 </template>
 
