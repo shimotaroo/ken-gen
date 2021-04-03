@@ -11,7 +11,7 @@
                 <p class="bg-white">{{ symbol }}</p>
             </div>
         </div>
-        <router-link :to="{ name: 'top' }" class="link-button">入力画面に戻る</router-link>
+        <router-link :to="{ name: 'top' }" type="button" class="link-button">入力画面に戻る</router-link>
     </div>
 </template>
 
