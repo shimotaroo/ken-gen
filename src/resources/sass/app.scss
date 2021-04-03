@@ -15,6 +15,10 @@ ul {
     font-family: 'Righteous', cursive;
 }
 
+.v-footer {
+    background-color: white;
+}
+
 // フォントサイズ・太さ
 .font-small {
     font-size: 14px;
@@ -53,6 +57,10 @@ ul {
 
 .component-area {
     margin: 150px auto;
+}
+
+.component-area a {
+    width: 180px;
 }
 
 .form-area {
