@@ -1,8 +1,9 @@
 <template>
     <div class="component-area">
         <div class="description-area">
-            <p class="mb-0">変更したい権限を入力してください</p>
-            <small>先頭のd、-、|は入力しないでください</small>
+            <p class="mb-1 font-big">変更したい権限を入力してください</p>
+            <small>先頭の「d」、「-」、「|」は入力しないでください</small><br>
+            <small>現在「s」、「t」には対応できていません</small>
         </div>
         <div class="form-area">
             <!-- バリデーションメッセージ -->
