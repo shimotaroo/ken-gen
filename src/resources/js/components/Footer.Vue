@@ -1,9 +1,10 @@
 <template>
-    <v-toolbar
-        bottom
-        max-height="60"
-    >
-        <v-spacer />
-        <p>@ken-gen 2021</p>
-    </v-toolbar>
+    <v-footer color="white">
+        <v-col
+            class="text-center"
+            cols="12"
+        >
+        {{ new Date().getFullYear() }} ken-gen
+        </v-col>
+    </v-footer>
 </template>
