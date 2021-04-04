@@ -15,7 +15,7 @@
             <!-- エラーメッセージ -->
             <p class="errors" v-if="errorMessage">{{ errorMessage }}</p>
             <form class="form" @submit.prevent="convert">
-                <input type="text" v-model="permission_symbol" placeholder="rwxrwxrwx" autofocus maxlength="9">
+                <input type="text" v-model="permission_symbol" placeholder="rwxrwxrwx" maxlength="9">
                 <div class="form-button">
                     <button type="submit">変換する</button>
                 </div>
